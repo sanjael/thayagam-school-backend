@@ -120,6 +120,8 @@ class FeePaymentOut(BaseModel):
     id: int
     student_id: int
     student_name: Optional[str] = None
+    admission_no: Optional[str] = None
+    phone: Optional[str] = None
     class_name: Optional[str] = None
     term: str
     academic_year: str
