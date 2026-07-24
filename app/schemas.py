@@ -41,6 +41,8 @@ class ClassOut(BaseModel):
     id: int
     name: str
     section: Optional[str]
+    student_count: Optional[int] = 0
+    pending_fees: Optional[float] = 0.0
     class Config:
         from_attributes = True
 
@@ -79,6 +81,7 @@ class StudentOut(BaseModel):
     address: Optional[str]
     is_active: bool
     created_at: Optional[datetime] = None
+    pending_fees: Optional[float] = 0.0
     class Config:
         from_attributes = True
 
